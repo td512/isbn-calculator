@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "isbn/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "ird-validator"
+  spec.name          = "isbn-calculator"
   spec.version       = ISBN::Calculator::VERSION
   spec.authors       = ["Theo Morra"]
 	spec.email         = ["theo@theom.nz"]
