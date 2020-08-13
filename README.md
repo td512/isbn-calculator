@@ -2,7 +2,7 @@
 
 [![gem](https://img.shields.io/gem/v/isbn-calculator.svg)](https://rubygems.org/gems/isbn-calculator)
 
-_A validator for New Zealand tax numbers (IRD)_
+_Calculates the check digit of a partial ISBN_
 
 ## Installation
 
