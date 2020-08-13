@@ -4,11 +4,11 @@ RSpec.describe ISBN::Calculator do
   end
 
   it "rejects invalid ISBN numbers" do
-    expect(ISBN::Calculator.calculate(0).to eq(false))
+    expect(ISBN::Calculator.calculate(0)).to eq(false)
   end
 
   it "calculates the ISBN check digit of 978014300723" do
-    expect(ISBN::Calculator.calculate(978014300723).to eq(4))
+    expect(ISBN::Calculator.calculate(978014300723)).to eq(4)
   end
 
   it "computes the weighted checksum correctly" do
