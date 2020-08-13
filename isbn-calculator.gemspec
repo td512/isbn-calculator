@@ -5,6 +5,7 @@ require "isbn/version"
 Gem::Specification.new do |spec|
   spec.name          = "isbn-calculator"
   spec.version       = ISBN::Calculator::VERSION
+  spec.license       = "MIT"
   spec.authors       = ["Theo Morra"]
 	spec.email         = ["theo@theom.nz"]
 
