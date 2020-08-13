@@ -4,7 +4,7 @@ module ISBN
 
     def self.calculate(isbn)
       isbn = (isbn.is_a? Integer) ? isbn : isbn.gsub('-', '').to_i
-      return false if ! isbn || ! isbn.to_s.chars.count == 12
+      return false if ! isbn || ! isbn.to_s.chars.count == 12 || isbn.zero? || isbn.nil?
       checksum = self.weighted_calc(isbn, WEIGHT) % 10
       checksum = checksum.zero? ? checksum : 10 - checksum
 
